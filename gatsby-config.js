@@ -2,6 +2,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,12 +13,12 @@ module.exports = {
     {
       resolve: 'gatsby-source-cosmicjs',
       options: {
-        bucketSlug: process.env.COSMIC_BUCKET,
-        objectTypes: ['posts','settings'],
+        bucketSlug: 'fuegoltd',
+        objectTypes: ['posts', 'settings'],
         apiAccess: {
-          read_key: process.env.COSMIC_READ_KEY,
-        }
-      }
+          read_key: 'Tic0E7Y5AlTiKV9G7Ob353f6qJnwMxQTl4RXh7ekq08UOMbCaG',
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,

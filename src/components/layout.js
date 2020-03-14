@@ -41,8 +41,8 @@ export default ({ children, location }) => (
         header = (
           <div
             style={{
-              backgroundColor: '#007ACC',
-              backgroundImage: `url("${homgePageHero}?w=2000")`,
+              backgroundColor: '#ffffe4',
+              // backgroundImage: `url("${homgePageHero}?w=2000")`,
               backgroundSize: 'cover',
               backgroundPosition: 'right',
               width: '100%',
@@ -51,10 +51,26 @@ export default ({ children, location }) => (
               marginBottom: `${rhythm(1.5)}`,
             }}
           >
+            <div
+              style={{
+                backgroundColor: '#ffffe4',
+                // backgroundSize: 'cover',
+                // backgroundImage: `url("${homgePageHero}?w=750")`,
+                margin: 'auto',
+                textAlign: 'center',
+              }}
+            >
+              <img
+                data-sal="zoom-in"
+                data-sal-duration="1000"
+                data-sal-delay="300"
+                style={{ width: '250px', paddingTop: '20px' }}
+                src={homgePageHero}
+              ></img>
+            </div>
             <h1
               style={{
                 ...scale(1.3),
-                position: 'absolute',
                 textAlign: 'center',
                 left: 0,
                 right: 0,
@@ -64,6 +80,9 @@ export default ({ children, location }) => (
               }}
             >
               <Link
+                data-sal="fade"
+                data-sal-duration="1000"
+                data-sal-delay="1000"
                 style={{
                   boxShadow: 'none',
                   textDecoration: 'none',
@@ -107,6 +126,7 @@ export default ({ children, location }) => (
           {header}
           <div
             style={{
+              backgroundColor: '#ffffe4',
               marginLeft: 'auto',
               marginRight: 'auto',
               maxWidth: rhythm(24),

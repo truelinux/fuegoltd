@@ -20,6 +20,10 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={location}>
+        <style>{`
+        body {
+          background-color: #ffffe4
+        }`}</style>
         <Helmet title={siteTitle} />
         <Bio settings={author} />
         {posts.map(({ node }) => {
@@ -31,7 +35,10 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={`posts/${node.slug}`}>
+                <Link
+                  style={{ boxShadow: 'none', color: '#9C4D9E' }}
+                  to={`posts/${node.slug}`}
+                >
                   {title}
                 </Link>
               </h3>
