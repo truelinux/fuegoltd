@@ -21,6 +21,10 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={location}>
+        <style>{`
+        body {
+          background-color: #ffffe4
+        }`}</style>
         <style>
           {`
           .post-content {
@@ -42,6 +46,9 @@ class BlogPostTemplate extends React.Component {
         </style>
         <Helmet title={`${post.title} | ${siteTitle}`} />
         <div
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-delay="300"
           style={{
             marginTop: rhythm(1.4),
           }}
@@ -49,13 +56,20 @@ class BlogPostTemplate extends React.Component {
           <Link to="/">← Back to Posts</Link>
         </div>
         <h1
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-delay="300"
           style={{
+            color: '#9C4D9E',
             marginTop: rhythm(1),
           }}
         >
           {post.title}
         </h1>
         <p
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-delay="500"
           style={{
             ...scale(-1 / 5),
             display: 'block',
@@ -66,6 +80,9 @@ class BlogPostTemplate extends React.Component {
           {post.created}
         </p>
         <div
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-delay="1000"
           className="post-hero"
           style={{
             backgroundColor: '#007ACC',
@@ -77,6 +94,9 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <div
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-delay="100"
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />

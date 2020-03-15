@@ -109,6 +109,9 @@ export default ({ children, location }) => (
             }}
           >
             <Link
+              data-sal="fade"
+              data-sal-duration="1000"
+              data-sal-delay="300"
               style={{
                 boxShadow: 'none',
                 textDecoration: 'none',
@@ -137,49 +140,15 @@ export default ({ children, location }) => (
             {children}
           </div>
           <footer
+            data-sal="fade"
+            data-sal-duration="1000"
+            data-sal-delay="1000"
             style={{
               textAlign: 'center',
               padding: `0 20px 80px 0`,
             }}
           >
-            powered by&nbsp;
-            <a
-              target="_blank"
-              href="https://gatsbyjs.org"
-              style={{
-                color: '#191919',
-                boxShadow: 'none',
-              }}
-            >
-              <img
-                src={gatsbyLogo}
-                alt="Gatsby JS"
-                style={{
-                  width: '20px',
-                  margin: '0 4px -3px 2px',
-                }}
-              />
-              <strong>Gatsby</strong>
-            </a>
-            &nbsp;and&nbsp;
-            <a
-              target="_blank"
-              href="https://cosmicjs.com"
-              style={{
-                color: '#191919',
-                boxShadow: 'none',
-              }}
-            >
-              <img
-                src={cosmicjsLogo}
-                alt="Cosmic JS"
-                style={{
-                  width: '18px',
-                  margin: '0 4px -2px 5px',
-                }}
-              />
-              <strong>Cosmic JS</strong>
-            </a>
+            &copy;2020 Fuego LTD
           </footer>
         </div>
       )
