@@ -1,10 +1,12 @@
 import React from 'react'
+import 'typeface-raleway'
 import { rhythm } from '../utils/typography'
 
 export default ({ settings }) => (
   <div
     style={{
       display: 'flex',
+      fontFamily: 'Raleway',
       marginBottom: rhythm(2.5),
     }}
   >

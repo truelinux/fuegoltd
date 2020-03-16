@@ -8,6 +8,7 @@ import { rhythm, scale } from '../utils/typography'
 
 // Import typefaces
 import 'typeface-montserrat'
+import 'typeface-raleway'
 import 'typeface-merriweather'
 
 export default ({ children, location }) => (

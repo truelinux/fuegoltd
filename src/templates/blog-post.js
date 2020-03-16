@@ -66,19 +66,20 @@ class BlogPostTemplate extends React.Component {
         >
           {post.title}
         </h1>
-        <p
+        <strong
           data-sal="fade"
           data-sal-duration="1000"
           data-sal-delay="500"
           style={{
             ...scale(-1 / 5),
             display: 'block',
+            color: '#FCB040',
             marginBottom: rhythm(0.6),
             marginTop: rhythm(-0.6),
           }}
         >
           {post.created}
-        </p>
+        </strong>
         <div
           data-sal="fade"
           data-sal-duration="1000"
@@ -94,6 +95,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <div
+          style={{ fontFamily: 'Raleway' }}
           data-sal="fade"
           data-sal-duration="1000"
           data-sal-delay="100"

@@ -29,20 +29,24 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = get(node, 'title') || node.slug
           return (
-            <div key={node.slug}>
+            <div style={{ fontFamily: 'Raleway' }} key={node.slug}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
               >
                 <Link
-                  style={{ boxShadow: 'none', color: '#9C4D9E' }}
+                  style={{
+                    boxShadow: 'none',
+                    color: '#9C4D9E',
+                    textTransform: 'uppercase',
+                  }}
                   to={`posts/${node.slug}`}
                 >
                   {title}
                 </Link>
               </h3>
-              <small>{node.created}</small>
+              <strong style={{ color: '#FCB040' }}>{node.created}</strong>
               <p
                 dangerouslySetInnerHTML={{ __html: node.metadata.description }}
               />
